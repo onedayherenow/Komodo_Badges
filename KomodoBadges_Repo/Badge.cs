@@ -1,90 +1,32 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
-//using KomodoBadges_Repo;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using KomodoBadges_Repo;
 
-//namespace KomodoBadges_Repo
-//{
+namespace KomodoBadges_Repo
+{		public class Badge
+	{
+		//properties
+		public int BadgeID { get; set; }
+		public List<string> Doors { get; set; }  //a list of doors
 
-	//POCO -- Plaing old Csharp object
-	//Simple object that holds data
-//	public class Badge
-//	{
-//		//properties
-//		public int BadgeID { get; set; }
+		public string BadgeName;
 
+		public Badge() { }
+		public Badge(int badgeID, string badgeName)  
+		{
+			Doors = new List<string>();  //instantiates the list for new doors to be added
+			BadgeID = badgeID;
+			BadgeName = badgeName;
+		}
 
-//		//constructors
-
-//		public Badge() { }
-
-//		//cant go out using title, can only go in,, scope
-//		public Badge(int badgeID)
-//		{
-//			BadgeID = badgeID;
-//		}
-
-//	}
-
-	
-
-//	public class SecurityBadge : Badge
-//	{
-//		public List<string> Doors { get; set; }
-
-//		public string BadgeName = "Security"; 
-
-//		public SecurityBadge(){}
-//		public SecurityBadge(int badgeID)
-//			: base(badgeID)
-//		{
-//			Doors = new List<string>();
-//			BadgeID = badgeID;
-//		}
-
-//	}
-
-//	public class AgentBadge : Badge
-//	{
-//		public List<string> Doors { get; set; }
-
-//		public string BadgeName = "Security";
-
-//		public AgentBadge() { }
-//		public AgentBadge(int badgeID)
-//			: base(badgeID)
-//		{
-//			Doors = new List<string>();
-
-//		}
-//	}
-
-//	public class DeveloperBadge : Badge
-//	{
-//		public List<string> Doors { get; set; }
-
-//		public string BadgeName = "Security";
-
-//		public DeveloperBadge() { }
-//		public DeveloperBadge(int badgeID)
-//			: base(badgeID)
-//		{
-//			Doors = new List<string>();
-
-//		}
-
-//		////methods
-//		//public string DisplayDoors(List<string> list)
-//		//{
-
-//		//	foreach (string door in list)
-//		//	{
-//		//		return door;
-//		//	}
-//		//}
-
-//	}
-
-//}
+		//methods
+		public List<string> DoorListAddition(List<string> newDoors)   //we can add a list of new doors to our badge door list
+		{
+			Doors.AddRange(newDoors);  //adds these doors to the end of the list
+			return Doors;  //return the list of doors after adding newDoors
+		}
+	}
+}

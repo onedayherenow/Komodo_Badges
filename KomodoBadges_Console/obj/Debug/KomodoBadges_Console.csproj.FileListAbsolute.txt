@@ -1,0 +1,10 @@
+C:\Users\oneda\source\repos\KomodoBadges\KomodoBadges_Console\bin\Debug\KomodoBadges_Console.exe.config
+C:\Users\oneda\source\repos\KomodoBadges\KomodoBadges_Console\bin\Debug\KomodoBadges_Console.exe
+C:\Users\oneda\source\repos\KomodoBadges\KomodoBadges_Console\bin\Debug\KomodoBadges_Console.pdb
+C:\Users\oneda\source\repos\KomodoBadges\KomodoBadges_Console\bin\Debug\KomodoBadges_Repo.dll
+C:\Users\oneda\source\repos\KomodoBadges\KomodoBadges_Console\bin\Debug\KomodoBadges_Repo.pdb
+C:\Users\oneda\source\repos\KomodoBadges\KomodoBadges_Console\obj\Debug\KomodoBadges_Console.csproj.AssemblyReference.cache
+C:\Users\oneda\source\repos\KomodoBadges\KomodoBadges_Console\obj\Debug\KomodoBadges_Console.csproj.CoreCompileInputs.cache
+C:\Users\oneda\source\repos\KomodoBadges\KomodoBadges_Console\obj\Debug\KomodoBadges_Console.csproj.CopyComplete
+C:\Users\oneda\source\repos\KomodoBadges\KomodoBadges_Console\obj\Debug\KomodoBadges_Console.exe
+C:\Users\oneda\source\repos\KomodoBadges\KomodoBadges_Console\obj\Debug\KomodoBadges_Console.pdb

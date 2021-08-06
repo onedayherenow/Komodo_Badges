@@ -8,11 +8,8 @@ using KomodoBadges_Repo;
 namespace KomodoBadges_Repo
 {
 	public class BadgeRepository
-	{
-		public Dictionary<int, List<string>> _listOfAllBadgesAndDoors = new Dictionary<int, List<string>>();   //dictionary field made up of the badge objects
-		 //field usables in all crud methods, they can all use the same list in all methods, persisting object
-		//the methods need to be used outside, public
-		//anything with an underscore and camelcase is a field
+	{   //persisting object
+		public Dictionary<int, List<string>> _listOfAllBadgesAndDoors = new Dictionary<int, List<string>>();   //dictionary field made up of the badge objects and each of their corresponding doors
 
 		//create
 		public void AddBadgeToRepo(int id, List<string> newDoors) //add badge to list
@@ -38,9 +35,7 @@ namespace KomodoBadges_Repo
 			{
 				return false;  //did not contain original id
 			}
-		
 		}
-
 
 		//delete
 		public bool RemoveBadgeFromList(int id)
@@ -56,21 +51,5 @@ namespace KomodoBadges_Repo
 				return false;  //dictionary does not contain key id
 			}
 		}
-
-
-
-		//helper method
-		//public List<string> GetDoorsById(Dictionary<int, List<string>> dictionary)   //returns the list of doors
-		//{
-		//	for (int Dictionary.KeyCollection in dictionary)  //for each object in list
-		//	{
-		//		if (_listOfAllBadgesAndDoors.ContainsKey(id) == true)     //helper methods which get with an id
-		//		{
-		//			return dictonary.ValueCollection;  //if equals the id of object requested, then return
-		//		}
-		//	}
-		//	return null; //if we find it we return, if not return null
-		//}
-
 	}
 }
